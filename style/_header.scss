@@ -1,0 +1,60 @@
+$textColor: #fff;
+$bgColor: #000;
+$mainColor: #ffa343;
+$h1Font: 6rem;
+$h2Font: 3rem;
+$pFont: 1rem;
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: transparent;
+  
+  width: 100%;
+  display: flex;
+  padding: 27px 17px;
+  align-items: center;
+  justify-content: space-between;
+
+ 
+  .logo {
+    font-size: 33px;
+    color: $textColor;
+    font-weight: 700;
+    span {
+      color: $mainColor;
+    }
+  }
+  .navbar {
+    display: flex;
+    a {
+      color: $textColor;
+      font-size: $pFont;
+      font-weight: 500;
+      margin: 15px 22px;
+      transition: all 0.5s ease;
+      text-transform: uppercase;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    a {
+      color: $textColor;
+      margin-left: 20px;
+      transition: all 0.5s ease;
+     
+      &:hover {
+        color: $mainColor;
+        transform: translateY(-3px);
+      }
+    }
+    a:nth-child(1) {
+      font-size: $pFont;
+      margin-right: 20px;
+    }
+  }
+}

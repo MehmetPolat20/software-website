@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import "./header";
+@import "./main";
+@import "./educationinfo";
+@import "aboutus";
+@import "topeducation";
+@import "contactus";
+@import "footer";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+// font-family: "Open Sans", sans-serif;
+$textColor: #fff;
+$bgColor: #000;
+$mainColor: #ffa343;
+$h1Font: 6rem;
+$h2Font: 3rem;
+$pFont: 1rem;
+
+body {
+  color: $textColor;
+  background-color: $bgColor;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 40px;
+  background-color: $mainColor;
+  color: $bgColor;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  &:hover {
+    transform: translateX(10px);
+    border: 2px solid $textColor;
+    background-color: transparent;
+    color: $textColor;
+  }
+}
+@media (max-width: 1220px) {
+  .navbar li {
+    display: none;
+  }
+  .home {
+    .home-text {
+      h5 {
+        font-size: 25px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .btn{
+        padding: 8px 15px;
+        font-size: 16px;
+        transition: all 0.5s;
+      }
+    }
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    // grid-template-columns: 1fr;
+  }
+}

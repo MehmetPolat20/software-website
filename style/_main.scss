@@ -1,0 +1,45 @@
+section {
+  padding: 70px 40px 60px;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(./../img/group.jpeg);
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  .home-text {
+    h5 {
+      font-size: 50px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: $mainColor;
+    }
+    h1 {
+        
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 20px;
+     
+
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        color: #ffffffab;
+        margin-bottom: 35px;
+    }
+  }
+}

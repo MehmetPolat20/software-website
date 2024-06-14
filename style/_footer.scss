@@ -1,0 +1,43 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 60px;
+    .footer-box{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        a{
+            color: #979797;
+            margin-bottom: 12px;
+            transition: all 0.4s;
+            &:hover{
+                color: $textColor;
+                transform: scale(1.04);
+            }
+        }
+        .social a{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #202020;
+            width: 45px;
+            height: 45px;
+            color: $textColor;
+            border-radius: 50%;
+            margin-right: 8px;
+            &:hover{
+                background-color: $mainColor;
+            }
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+    color: #8e8e8e;
+    font-size: 15px;
+}

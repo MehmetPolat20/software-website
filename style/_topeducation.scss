@@ -1,0 +1,69 @@
+.center-text {
+  text-align: center;
+  h2 {
+    font-size: $h2Font;
+    font-weight: 800;
+  }
+}
+.top-educations-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  align-items: center;
+  gap: 3rem;
+  .box {
+    position: relative;
+    margin: 20px 0;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(70%);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+    h3{
+      position: absolute;
+      left: 25px;
+      bottom: 85px;
+      font-size: 18px;
+      font-weight: 500;
+      i{
+        color: $mainColor;
+        margin-right: 6px;
+      }
+    }
+    h4{
+      position: absolute;
+      bottom: 55px;
+      left: 25px;
+      font-size: 18px;
+      font-weight: 500;
+      i{
+        color: $mainColor;
+        margin-right: 6px;
+      }
+    }
+    h5{
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      font-size: 18px;
+      font-weight: 500;
+      i{
+        color: $mainColor;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+.center-btn {
+  text-align: center;
+  margin-top: 64px;
+  .btn {
+    transition: all 0.4s;
+  }
+}

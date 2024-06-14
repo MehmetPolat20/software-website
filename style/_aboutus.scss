@@ -1,0 +1,36 @@
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 9rem;
+  .about-us-img img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .about-us-text {
+    h5 {
+      font-size: 22px;
+      font-weight: 600;
+      color: $mainColor;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: $h2Font;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+    p {
+      font-size: $pFont;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+    .btn {
+        transition: all 0.5s;
+    }
+  }
+}
